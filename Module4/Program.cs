@@ -6,7 +6,11 @@ namespace Module4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            string A = "textA";
+            string B = "textB";
+            bool C = A != B;
+
+            Console.WriteLine($"bool C = {C}");
+            Console.ReadKey();        }
     }
 }
