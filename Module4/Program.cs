@@ -6,11 +6,15 @@ namespace Module4
     {
         static void Main(string[] args)
         {
-            string A = "textA";
-            string B = "textB";
-            bool C = A != B;
+            int A = 1;
+            int B = 4;
+            double X = 1.3;
+            double Y = 4.1;
+
+            bool C = (A < B) | (X > Y);
 
             Console.WriteLine($"bool C = {C}");
-            Console.ReadKey();        }
+            Console.ReadKey();        
+        }
     }
 }
