@@ -6,13 +6,18 @@ namespace Module4
     {
         static void Main(string[] args)
         {
-            var a = 1;
-            var b = 3;
+            var a = 6;
+            var b = 7;
 
-            var c = (a > b) ^ (a != b);
-
-            Console.WriteLine(c);
-            Console.ReadKey();
+            if (a == b)
+            {
+                Console.WriteLine("Условие истинно");
+            }
+            else
+            {
+                Console.WriteLine("Условие ложно");
+            }
+                Console.ReadKey();
         }
     }
 }
