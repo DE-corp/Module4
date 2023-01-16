@@ -6,14 +6,12 @@ namespace Module4
     {
         static void Main(string[] args)
         {
-            int a = 5 + 6;  //11
-            int b = 7 + 8;  //15
+            var a = 1;
+            var b = 3;
 
-            bool c = (b == a) & (b > a + 1);
-            bool d = (b == a) && (b > a + 1);
+            var c = (a > b) ^ (a != b);
 
             Console.WriteLine(c);
-            Console.WriteLine(d);
             Console.ReadKey();
         }
     }
