@@ -6,32 +6,49 @@ namespace Module4
     {
         static void Main(string[] args)
         {
-			Console.WriteLine("Напишите свой любимый цвет на английском с маленькой буквы");
+			Console.WriteLine("Напишите свой любимый цвет");
 
-			var color = Console.ReadLine();
+			var color = Console.ReadLine().ToLower();
 
-			if (color == "red")
+			if (color == "красный")
 			{
 				Console.BackgroundColor = ConsoleColor.Red;
 				Console.ForegroundColor = ConsoleColor.Black;
 
-				Console.WriteLine("Your color is red!");
+				Console.WriteLine("Твой цвет - Красный!");
 			}
 
-			else if (color == "green")
+			else if (color == "зеленый")
 			{
 				Console.BackgroundColor = ConsoleColor.Green;
 				Console.ForegroundColor = ConsoleColor.Black;
 
-				Console.WriteLine("Your color is green!");
+				Console.WriteLine("Твой цвет - Зеленый!");
 			}
-			else
+			
+			else if (color == "розовый")
 			{
-				Console.BackgroundColor = ConsoleColor.Cyan;
+				Console.BackgroundColor = ConsoleColor.Magenta;
 				Console.ForegroundColor = ConsoleColor.Black;
 
-				Console.WriteLine("Your color is cyan!");
+				Console.WriteLine("Твой цвет - Розовый!");
 			}
+
+			else if (color == "серый")
+			{
+				Console.BackgroundColor = ConsoleColor.DarkGray;
+				Console.ForegroundColor = ConsoleColor.Black;
+
+				Console.WriteLine("Твой цвет - Серый!");
+			}
+
+			else
+            {
+                Console.BackgroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.Black;
+
+                Console.WriteLine("Твой цвет - Бирюзовый!");
+            }
 
 			Console.ReadKey();
         }
