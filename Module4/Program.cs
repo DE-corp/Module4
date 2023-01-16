@@ -6,15 +6,15 @@ namespace Module4
     {
         static void Main(string[] args)
         {
-            int A = 1;
-            int B = 4;
-            double X = 1.3;
-            double Y = 4.1;
+            int a = 5 + 6;  //11
+            int b = 7 + 8;  //15
 
-            bool C = (A < B) | (X > Y);
+            bool c = (b == a) & (b > a + 1);
+            bool d = (b == a) && (b > a + 1);
 
-            Console.WriteLine($"bool C = {C}");
-            Console.ReadKey();        
+            Console.WriteLine(c);
+            Console.WriteLine(d);
+            Console.ReadKey();
         }
     }
 }
